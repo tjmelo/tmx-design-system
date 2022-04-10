@@ -2,7 +2,7 @@ import { Component, Prop, h } from '@stencil/core';
 
 @Component({
     tag: 'tmx-button',
-    styleUrl: 'tmx-button.sass',
+    styleUrl: 'button.sass',
     shadow: true
 })
 
@@ -12,7 +12,7 @@ export class Button {
 
     render(){
         return (
-            <button>
+            <button class="primary">
                 <slot>{ this.teste }</slot>
             </button>
         )
