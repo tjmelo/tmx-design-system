@@ -1,19 +1,31 @@
+@import '../../global/global'
+
 :host
-    --primary: #F2A922
-    --seconday: #D98014
-    --tertiary: #D9501E
-    --carbon: #323E40
-    --danger: #D9501E
+    button
+        border: none
+        border-radius: 4px
+        cursor: pointer
+        display: block
+        font-family: 'Fira Code', monospace
+        font-weight: 500 
+        padding: .8rem 2rem
+        outline: none
+        transition: all .2s linear
+        &:hover
+            opacity: .85
 
-button
-    border: none
-    border-radius: 4px
-    display: block
-    cursor: pointer
-    padding: 1rem
-    outline: none
+    .primary
+        background: var(--primary)
+        color: var(--white)
 
-.primary
-    background: var(--primary)
-    &:hover
-        background: red
+    .success
+        background: var(--success)
+        color: var(--white)
+
+    .danger
+        background: var(--danger)
+        color: var(--white)
+
+    .warning
+        background: var(--warning)
+    

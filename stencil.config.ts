@@ -3,6 +3,7 @@ import { sass } from '@stencil/sass';
 
 export const config: Config = {
   namespace: 'tmx-design-system',
+  globalStyle: 'src/global/global.sass',
   outputTargets: [
     {
       type: 'dist',
